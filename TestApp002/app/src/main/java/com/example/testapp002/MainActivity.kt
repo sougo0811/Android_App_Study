@@ -66,6 +66,5 @@ class MainActivity : AppCompatActivity() {
             numberText.text = sen.toString()
         }
 
-
     }
 }
