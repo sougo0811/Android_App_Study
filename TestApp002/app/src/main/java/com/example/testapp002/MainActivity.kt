@@ -61,8 +61,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         mysteryButton.setOnClickListener {
-            sen = "Yatoi"
-
+            sen = "Yatoi."
             numberText.text = sen.toString()
         }
 
