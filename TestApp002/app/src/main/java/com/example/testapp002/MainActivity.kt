@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         fun color_change(num : Int){
 
+
             if(num%2 == 0 && num%3 == 0){
                 numberText.setTextColor(Color.parseColor("#ff7f50"))
             }
