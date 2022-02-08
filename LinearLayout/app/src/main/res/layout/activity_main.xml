@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5FFC7"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:text="@string/tv_msg"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="工大太郎"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E5FFC7"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="@string/cb_school" />
+
+        <CheckBox
+            android:id="@+id/cbNoSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="@string/cb_no_school" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#E5FFC7"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/rbMan"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="#FFFFFF"
+            android:text="@string/rb_man" />
+
+        <RadioButton
+            android:id="@+id/rbWeman"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FFFFFF"
+            android:text="@string/rb_woman" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spGrade"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFFFF"
+        android:entries="@array/lv_grade"
+        android:scrollbarSize="20dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/bt_save"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/courseList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:entries="@array/lv_course" />
+</LinearLayout>

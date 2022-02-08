@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         var num : Int = 0
         var sen : String = ""
+        var total : Int = 0
 
         fun color_change(num : Int){
 
