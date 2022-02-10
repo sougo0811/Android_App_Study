@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">都道府県</string>
+    <string name="dialog_title">注文確認</string>
+    <string name="dialog_msg">選択された都道府県を購入します</string>
+    <string name="dialog_btn_ok">購入</string>
+    <string name="dialog_btn_ng">キャンセル</string>
+    <string name="dialog_btn_nu">問合せ</string>
+    <string name="dialog_ok_toast">購入ありがとうございます。</string>
+    <string name="dialog_ng_toast">購入をキャンセルします</string>
+    <string name="dialog_nu_toast">お問い合わせ内容をお知らせください。</string>
+
+</resources>
