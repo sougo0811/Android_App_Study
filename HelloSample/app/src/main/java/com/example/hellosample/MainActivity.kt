@@ -15,25 +15,29 @@ class MainActivity : AppCompatActivity() {
         val writeButton: Button = findViewById(R.id.writeButton)
         val resetButton: Button = findViewById(R.id.resetButton)
         val listener = HelloListener()
-        val reset = HelloReset()
+
         writeButton.setOnClickListener(listener)
-        resetButton.setOnClickListener(reset)
+        resetButton.setOnClickListener(listener)
     }
 
     private inner class HelloListener : View.OnClickListener{
         override fun onClick(v: View?) {
             val inputName: EditText = findViewById(R.id.editText)
             val outputText: TextView = findViewById(R.id.outputText)
-            val inputStr = inputName.text.toString()
 
-            outputText.text = inputStr + "さん、こんばんは！"
-        }
-    }
+            when(v?.id){
+                R.id.writeButton -> {
+                    val inputStr = inputName.text.toString()
+                    outputText.text = inputStr + "さん、こんばんは！"
+                }
 
-    private  inner  class HelloReset : View.OnClickListener{
-        override fun onClick(v: View?){
-            val outputText: TextView = findViewById(R.id.outputText)
-            outputText.text = ""
+                R.id.resetButton -> {
+                    inputName.setText("")
+                    outputText.text = ""
+                }
+            }
+
+
         }
     }
 }
