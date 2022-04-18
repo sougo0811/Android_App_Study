@@ -1,7 +1,7 @@
 # Android Stadio の勉強用リポジトリ
 
 仕様エディタ：*Android Stadio*<br>
-使用言語：*Kotlin*
+使用言語：*Kotlin*<br>
 トークン：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
 
 入っているもの<br>
