@@ -2,7 +2,7 @@
 
 仕様エディタ：*Android Stadio*<br>
 使用言語：*Kotlin*<br>
-トークン：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
+トークン：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
 
 入っているもの<br>
 - TestApp001 カウントアプリ (Android Stadioの環境構築時に作成)
