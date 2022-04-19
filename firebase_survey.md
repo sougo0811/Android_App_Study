@@ -28,4 +28,3 @@
 * [FireBase公式ドキュメント](https://firebase.google.com/docs/firestore/quotas?hl=ja)
 * [FirebaseのQiita](https://qiita.com/kohashi/items/43ea22f61ade45972881)
 
-* Firebase メアドkeyのデータ取り出し確認
